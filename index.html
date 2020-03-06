@@ -152,6 +152,97 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-LeetCode刷题第一天" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/06/LeetCode%E5%88%B7%E9%A2%98%E7%AC%AC%E4%B8%80%E5%A4%A9/">LeetCode刷题第一天</a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/06/LeetCode%E5%88%B7%E9%A2%98%E7%AC%AC%E4%B8%80%E5%A4%A9/" class="archive-article-date">
+  	<time datetime="2020-03-06T10:06:24.675Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<hr>
+<p>#title: LeetCode刷题第一天<br>date: 2020-03-06 18:06:24</p>
+<hr>
+<p>##1.题目描述：在有序数组中找出两个数，使它们的和为 target。</p>
+<ul>
+<li>记得题目是有序数组有序数组<br>使用双指针，一个指针指向值较小的元素，一个指针指向值较大的元素。指向较小元素的指针从头向尾遍历，<br>指向较大元素的指针从尾向头遍历。</li>
+</ul>
+<ul>
+<li>如果两个指针指向元素的和 sum == target，那么得到要求的结果；<br>如果 sum &gt; target，移动较大的元素，使 sum 变小一些；<br>如果 sum &lt; target，移动较小的元素，使 sum 变大一些。<br>数组中的元素最多遍历一次，时间复杂度为 O(N)。只使用了两个额外变量，空间复杂度为 O(1)。<br>{2,3,4,5}</li>
+</ul>
+<p>##2.自己的解决方案：<br>‘public static int []num(int[] numbers,int target){</p>
+<pre><code>for (int i = 0; i &lt; numbers.length-1; i++) {
+
+
+    for (int j = numbers.length-1; j &gt;i ; j--) {
+
+
+        if (numbers[i]+numbers[j]==target){
+
+
+            return new int[]{i,j};
+
+        }
+
+
+    }
+
+}throw new IllegalArgumentException(&quot;找不到两个数字相加等于目标值&quot;);&apos;</code></pre><p>##3.GitHub解决方案：</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/06/LeetCode%E5%88%B7%E9%A2%98%E7%AC%AC%E4%B8%80%E5%A4%A9/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-MyFistBlog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
