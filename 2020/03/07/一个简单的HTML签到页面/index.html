@@ -5,14 +5,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>创建技术博客的初衷 - JuneBlog</title>
+    <title>一个简单的HTML签到页面 - JuneBlog</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Fechin,"> 
-    <meta name="description" content="##创建这个技术博客，我打算分享一些我在计算机上的一些心得，技术（当然技术博客最重要的就是技术了。）最重要的一点是我希望通过这个技术博客可以帮助我积攒更多计算机知识。
+    <meta name="description" content="#我打算用一个bootstrap前端框架+数据库+servlet（主要做一个数据库和前端表单的连接，我猜是这样）做一个简单的签到页面。
 
- **我记得我接触过最早的编,"> 
+--
+页面的内容：1.一个名字的输入框 &amp;nbsp; &amp;nb,"> 
     <meta name="author" content="June"> 
     <link rel="alternative" href="atom.xml" title="JuneBlog" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -57,7 +58,7 @@
     <div class="bar" style="width: 0;"></div>
     <a class="icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
     <div title="播放/暂停" class="icon-play"></div>
-    <h3 class="subtitle">创建技术博客的初衷</h3>
+    <h3 class="subtitle">一个简单的HTML签到页面</h3>
     <div class="social">
         <!--<div class="like-icon">-->
             <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -75,21 +76,27 @@
     <div class="section">
         <div class="article">
     <div class='main'>
-        <h1 class="title">创建技术博客的初衷</h1>
+        <h1 class="title">一个简单的HTML签到页面</h1>
         <div class="stuff">
-            <span>三月 06, 2020</span>
+            <span>三月 07, 2020</span>
             
 
         </div>
         <div class="content markdown">
-            <p>##创建这个技术博客，我打算分享一些我在计算机上的一些心得，技术（当然技术博客最重要的就是技术了。）最重要的一点是我希望通过这个技术博客可以帮助我积攒更多计算机知识。</p>
-<hr>
- <p><font color="red">**我记得我接触过最早的编程应该是易语言了**</font>，
-差不多是四年级左右吧。那时候接触易语言的初衷完全就是为了盗QQ号。也没有想那么多，更不知道一直会坚持到现在。<p>最早的时候为了盗号还特意上网查过，网上也就是说了什么什么写编程写脚本就可以。鬼知道是什么东西。上网一查各种介绍脚本语言的什么都有。但那时候因为英语成绩差（虽然现在也不怎么样）。竟然选了易语言，一款由中国人编写的中文脚本语言。现在想想也真够奇葩的。现在看起来它的局限性确实很大，但那个时候用起来还不错，至少很快就能做出什么骗人刷车，刷枪，刷黄钻绿钻的软件。自己第一次学编程是在《我要自学网》的上看得教程。还别说真的看了十几节就可以做做小案例。我记得我做过两个小案例，让我影响太深刻了。一个是骗人刷CF枪的，我还把程序发给我的同学用过。程序大该是这样的：一个骗人刷枪的程序，然后又QQ账号和密码的登录。但其实里面置入了点击登录就自动把QQ账号和密码提交至指定好的邮箱。我那同学还真以为是个刷枪软件。高兴得要死。后来我把他账号密码发给他看。他才意识到自己被骗了。
-<br>
-<br>
+            <p>#我打算用一个bootstrap前端框架+数据库+servlet（主要做一个数据库和前端表单的连接，我猜是这样）做一个简单的签到页面。</p>
 <p>
-那时候自己玩电脑完全是为了玩游戏，但后来.
+--
+页面的内容：1.一个名字的输入框<br> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;2.一个表单的提交按钮<br> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
+---
+<font size =3>前端的设计很容易设计，但是后端的设计真的自己做起来和复杂。<br>
+        我上网查过关于表单的提交。大多数都没有我想要实现的例子。我觉得最为相似的应该只有一个注册案例我想过去简化注册案例就可以了，但是没有想到后端的设计过于复杂了。原本我想直接去除数据库查询，直接往里面插入数据。
+        但是到现在我也没有看懂注册案例的实现代码到底是怎么样的。可能自己太过着急了，想要找一个快速搭建的例子。
+<br>
+<br>
+        搭建的时候我有点犹豫了，如果说我直接把自己的电脑当做服务器来用，那么用花生壳的端口映射，它提供的域名就可以直接访问我本地服务器（外网内网都可以）只要在本地服务器部署的时候将HTML页面改为index默认首页然后用户就可以直接访问了。但是有一点：既然用户在浏览器上提价表单的时候是先找到本地服务器去操作里面的类实现数据库的连接。那么如果多台电脑同时操作会不会造成卡顿。（但其实这并不是我现在考虑，只不过突然想到了），我在想既然用户提交表单是在自己服务器上操作数据库的。那么我把项目部署到云服务器上它又怎么操作我的数据呢。有一个问题一直没有解决：
+
+</font>
+
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="true">
                 <source type="audio/mpeg" src="">
