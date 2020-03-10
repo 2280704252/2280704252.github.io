@@ -10,7 +10,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Fechin,"> 
-    
+    <meta name="description" content="Input:
+    s=&amp;quot;adpcplea&amp;quot;;
+    d=[&amp;quot;ale&amp;quot;,&amp;quot;apple&amp;quot;,&amp;quot;monkey&amp;quot;,&amp;quo,"> 
     <meta name="author" content="June"> 
     <link rel="alternative" href="atom.xml" title="JuneBlog" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -70,7 +72,52 @@
 
         </div>
         <div class="content markdown">
-            
+            <pre><code>Input:
+    s=&quot;adpcplea&quot;;
+    d=[&quot;ale&quot;,&quot;apple&quot;,&quot;monkey&quot;,&quot;plea&quot;];
+
+Output:
+    &quot;apple&quot;</code></pre><p>题目描述：删除s中的一些字符，使他构成字符串列表d中的一个字符，找出能构成的最长字符串。如果有多个相同长度的结果，返回字典序的最小字符串。<br></p>
+<p>通过删除字符串s中的一个字符能得到字符串t，可以认为t是s的子序列，我们可以使用双指针来判断一个字符串是否为另一个字符串的子序列。</p>
+<pre><code>public String findLonesWord(String s,list&lt;String&gt;d){
+    String longesWord =&quot;&quot;;
+    for(String target:d){
+        int l1=longestword.length();
+        int l2=target.length();
+        if(l1&gt;l2||(l1==l2&amp;&amp;longestWord.compareTo(target)&lt;0)){
+            continus;
+
+
+        }
+        if(isSubstr(s,target)){
+            longetWord=tatget;
+        }
+
+
+
+    }
+
+        return longestWord;
+
+
+}
+
+public boolean isSubstr(String s,String taeget){
+    int i=0;
+    int j=0;
+    while(i&lt;s.length()&amp;&amp;j&lt;target.length()){
+        if(s.charAt(i)==target.chatAt(j)){
+            j++
+
+        }
+            i++;
+
+    }
+
+        return j==target.leng
+
+
+}</code></pre>
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="true">
                 <source type="audio/mpeg" src="">
